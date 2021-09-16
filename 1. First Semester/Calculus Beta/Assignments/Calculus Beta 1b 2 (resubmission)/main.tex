@@ -1,0 +1,170 @@
+\documentclass[12pt,a4paper]{article}
+\title{Calculus $\beta$}
+\author{Rasmus Crolly}
+\date{\today}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{siunitx}
+\usepackage[cm]{fullpage}
+
+
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{external}
+\tikzexternalize[prefix=tikz/]
+
+\newcommand{\R}{\mathbb{R}}
+
+\setlength{\parindent}{0pt}
+
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=cyan,
+}
+\urlstyle{same}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+First resubmission
+\end{abstract}
+
+\section{1.66}
+
+\subsection{e}
+
+\begin{equation} \label{}
+\int_{0}^{1}\frac{\cos{x}}{\sin^2x}\mathrm{d}x
+\end{equation}
+
+making use of Sætning 1.42
+
+The inner function is substituted with t, \begin{math}
+\sin {x}=t
+\end{math}
+,t is then differentiated
+
+\begin{equation} \label{}
+\frac{\mathrm{d}t}{\mathrm{d}x}=\cos{x}
+\end{equation}
+and \begin{math}
+\mathrm{d}x=\frac{1}{\cos{x}}\mathrm{d}t
+\end{math}
+
+
+since the funtion is undefined in x=0 the lower limit is replaced with a
+and the upper limit is found by inserting the old limit into t which results in the following integral
+\begin{equation} \label{}
+\lim_{a\to0_+}\int_{\sin{a}}^{\sin{1}}\frac{\cos{x}}{t^2}\frac{1}{\cos{x}}\mathrm{d}t= \int_{a}^{\sin{1}}\frac{1}{t^2}\mathrm{d}t
+\end{equation}
+
+
+
+
+by making use of Sætning 1.56 now we can solve the integral
+
+\begin{equation} \label{}
+\int_{\sin{a}}^{\sin{1}}\frac{1}{t^2}\mathrm{d}t=\left[-\frac{1}{t}\right]_{\sin{a}}^{\sin{1}}=-\frac{1}{\sin{1}}-(-\frac{1}{\sin{a}})
+\end{equation}
+
+And finally since a is approaching 0 and sine to 0 is 0 we end up with
+
+\begin{equation} \label{}
+-\frac{1}{\sin{1}}-\infty
+\end{equation}
+
+The integral is therefor divergent as it approaches negative infinity 
+
+
+
+\subsection{f}
+
+
+\begin{equation} \label{}
+\int_{1}^{\infty}\frac{1}{x^2}\mathrm{d}x
+\end{equation}
+
+To simplify the problem the fraction is instead viewed as a power
+
+\begin{equation} \label{}
+\int_{1}^{\infty}x^{-2}\mathrm{d}x
+\end{equation}
+
+this means that we can apply
+
+\begin{equation} \label{}
+\frac{\mathrm{d}}{\mathrm{d}x}x^n=nx^{n-1}
+\end{equation}
+
+the upper limit is replaced by a
+
+We can now insert the limits
+
+\begin{equation} \label{}
+\int_{1}^{\infty}x^{-2}\mathrm{d}x=\left[-\frac{1}{x}\right]_{1}^{a}=-\frac{1}{a}-(-1\frac{1}{1})
+\end{equation}
+
+And by examining the result we can see that \begin{math}
+\frac{1}{a}
+\end{math} will tend towards 0 and the result is therefore 1 which means the integral is convergent
+
+
+\subsection{g}
+\begin{equation} \label{}
+\int_{0}^{1}\frac{1}{x^2}\mathrm{d}x
+\end{equation}
+
+
+We take the same steps as in the previous part but instead of replacing the upper limit we replace the lower one since the function is not defined if x=0 as it would mean dividing by 0. thus it ends up looking like the following
+
+
+\begin{equation} \label{}
+\int_{a}^{1}x^{-2}\mathrm{d}x=\left[-\frac{1}{x}\right]_{a}^{1}=-\frac{1}{1}-(-1\frac{1}{a^2})
+\end{equation}
+
+since \begin{math}
+\frac{1}{a}
+\end{math} tends towards infinity as a approaches zero (from the positive side) that means the integral is divergent
+
+
+
+\subsection{h}
+
+\begin{equation} \label{}
+\int_{7}^{8}\frac{1}{x-7}\mathrm{d}x
+\end{equation}
+
+first we observe that the function is not defined in x=7 we therefore replace the lower limit with a
+
+integrating by substitution by setting t=x-7
+
+
+differntieres med hensyn til t
+
+\begin{equation} \label{}
+\frac{\mathrm{d}t}{\mathrm{d}x}=1 \Rightarrow \mathrm{d}x=\frac{1}{1} \mathrm{d}t
+\end{equation}
+
+
+
+now we can finally integrate
+
+\begin{equation} \label{}
+\lim_{a\to0_+} \int_{a}^{1}\frac{1}{t} \mathrm{d}t=\lim_{a\to0_+}\left[\log{|t-a|}\right]_{a}^{1}=\lim_{a\to0_+}\log{|t|}-\log{|a|}
+\end{equation}
+
+Since log(a) approaches $-\infty$ as a goes towards 0 the equation returns $\infty$. The integral is therefore divergent
+
+
+
+
+\end{document}
