@@ -1,13 +1,16 @@
+
 \documentclass[12pt,a4paper]{article}
-\title{Calculus $\beta$ or Mechanics and Thermodynamics}
+\title{Mechanics and Thermodynamics}
 \author{Rasmus Crolly}
 \date{\today}
 
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{pgfplots}
-
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
 
 \usepackage[
 backend=biber,
@@ -19,7 +22,6 @@ sorting=ynt
 \usepackage{siunitx}
 \usepackage[cm]{fullpage}
 \usepackage{listings}
-
 
 \pgfplotsset{compat=1.16}
 \usetikzlibrary{external}
@@ -35,28 +37,34 @@ colorlinks=true,
 linkcolor=blue,
 filecolor=magenta,
 urlcolor=cyan,
-}
+}				
 \urlstyle{same}
 
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
 
 \begin{document}
 \maketitle
-
-\begin{abstract}
-Your abstract.
-\end{abstract}
-
-\section{Young and Freedman x.xx}
-
-\subsection{1}
-
+\subsection{a}
 \begin{lstlisting}[language=Python]
+	
 \end{lstlisting}
 
-\printbibliography[
-heading=bibintoc,
-title={References}
-]
+
+
+
+
+
 
 
 

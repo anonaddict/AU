@@ -1,0 +1,162 @@
+\documentclass[12pt,a4paper]{article}
+\title{Calculus $\beta$ 2b}
+\author{Rasmus Crolly}
+\date{\today}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} %for images%
+\usepackage{pgfplots} %for plotting in latex%
+\usepackage{amsmath}  %math font%
+\usepackage{amssymb}
+\usepackage{siunitx} %si unit stuff%
+\usepackage{biblatex}
+\addbibresource{sources.bib}
+
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{external}
+\tikzexternalize[prefix=tikz/]
+
+\newcommand{\R}{\mathbb{R}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\maketitle
+
+\section{2.12)}
+
+
+\subsection{introduction}
+For a function 
+\begin{math}
+f : D(f)\to\R
+\end{math}
+the range is the values that \begin{math}
+f
+\end{math}
+hits.
+A real number \begin{math}
+t
+\end{math}
+is said to be in the range of 
+\begin{math}
+f
+\end{math}
+if there exists an element \begin{math}
+z \in D(f)
+\end{math}
+where
+\begin{math}
+t=f(z)
+\end{math}
+(from 2.1 "Terminologi og notation" in the book) \cite{calcbeta2.1}
+
+
+\subsection{a}
+\begin{equation} 
+f : \R ^2\to \R 
+\end{equation}
+where
+\begin{equation} 
+f(x,y)=x-y
+\end{equation}
+
+Since both x and y can assume any real value the range of the function is
+
+\begin{equation} 
+Vm(f)=\left(-\infty,\infty\right)={t\in\R : -\infty < t < \infty }
+\end{equation}
+
+Note that the use of soft brackets is because infinity is not technically a real number and therefore not within the range
+
+\subsection{b}
+\begin{equation} 
+f : \R ^2 \to \R 
+\end{equation}
+where
+\begin{equation} 
+f(x,y)=x^2+y^2
+\end{equation}
+Since both of the variables have 2 as exponent neither of them can ever return a value below 0 and since they are added together they can return any positive value or 0
+
+
+
+
+\begin{equation} 
+Vm(f)=\left[0,\infty\right)=\{t\in\R : 0 < t < \infty \} 
+\end{equation}
+
+\subsection{c}
+
+
+\begin{math} 
+f : D(f)\to\R  
+\end{math}
+given that
+\begin{math} 
+f(x,y)=\frac{1}{x^2+y^2}
+\end{math}
+,
+where
+\begin{equation} 
+D(f)={(x,y) \in \R^2 : (x,y) \neq (0,0)}
+\end{equation}
+
+When
+\begin{equation}
+\lim_{x \land y \to 0} f(x,y) = \infty
+\end{equation}
+When 
+ \begin{equation}
+\lim_{x \lor y \to \infty} f(x,y)=0 
+\end{equation}
+
+
+\begin{equation} 
+Vm(f)=\left(0,\infty\right) =\{t\in\R : 0 < t < \infty \} 
+\end{equation}
+
+
+
+
+\subsection{d}
+\begin{center}
+\begin{math}
+f : \R ^2\to \R 
+\end{math}
+where
+\begin{math} 
+f(x,y)=\frac{7}{x^2+y^2+1}
+\end{math}
+\end{center}
+\vspace{2 mm} 
+
+We first observe that the function is continious as per Sentence (1.16) \cite{calcbeta1.16} in the book 7 and 1 are both continious functions, as is 
+\begin{math}
+x^2
+\end{math}
+and
+\begin{math}
+y^2
+\end{math}
+and since both 
+\begin{math}
+x^2
+\end{math}
+and
+\begin{math}
+y^2
+\end{math}
+will return positive numbers or 0 the denominator must be different from 0 since it also contains a +1
+
+\vspace{2 mm} 
+If both x and y are 0 the function will return 7, when they are very large the function will tend towards 0 and the range of the function is therefore
+
+\begin{equation} 
+Vm(f)=\left(0,7\right] 
+\end{equation}
+
+
+
+\printbibliography
+\end{document}
