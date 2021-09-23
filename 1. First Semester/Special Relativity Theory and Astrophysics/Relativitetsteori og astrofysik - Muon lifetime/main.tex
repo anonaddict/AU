@@ -1,0 +1,118 @@
+\documentclass[12pt,a4paper]{article}
+\title{Relativitetsteori og Astrofysik - Muon decay}
+\author{Rasmus Crolly}
+\date{\today}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{siunitx}
+
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{external}
+\tikzexternalize[prefix=tikz/]
+
+\newcommand{\R}{\mathbb{R}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\maketitle
+\section{Assignment}
+En myon er en elementarpartikel i familie med elektronen, blot noget tungere. Det betyder at den kan henfalde til en elektron, med en karakteristisk henfaldstid på omkring 2,2 mikrosekunder. Da myonen dannes med meget høj energi, kan det for eksemplets skyld antages at den bevæger sig med en Lorentz-faktor på 22. Det kan også antages, at myoner dannes i en højde af 10 km over jordoverfladen (højderne hvori myoner dannes er en bred fordeling omkring ca. 10 km).
+
+a.      Bestem myonens reducerede hastighed \begin{math}
+\beta=v/c
+\end{math}. Kommenter kort på svaret.
+
+b.      Bestem den vejlængde en myon tilbagelægger i løbet af sin karakteristiske henfaldstid. Kommenter kort på svaret.
+
+c.      Vurder nu om myonerne kan nå jordoverfladen ud fra dit kendskab til afsnit 8.5 i bogen. Giv en fyldestgørende forklaring sammen med din beregning.
+
+
+\section{part a}
+
+To determine the reduced velocity of the muon.
+
+the value of \begin{math}
+\beta
+\end{math} can be found from the Lorentz factor formula
+
+\begin{equation} \label{}
+\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\Rightarrow \beta=\sqrt{1-\frac{1}{\gamma^2}} 
+\end{equation} 
+
+If the given value of 22 is inserted in place of \begin{math}
+\gamma
+\end{math} 
+
+\begin{equation} \label{}
+\beta=\sqrt{1-\frac{1}{22^2}}=\frac{\sqrt(483)}{22}=0.999
+\end{equation}
+
+which means that \begin{math}
+v=0.999c
+\end{math} since \begin{math}
+\beta=\frac{v}{c}\Rightarrow v=\beta \cdot c
+\end{math}
+
+\vspace{2 mm}
+Given that \begin{math}
+v=0.99c
+\end{math}
+the time from the reference system of the muon must be moving very slowly due to the effect of special relativity and it is therefore expected that it will last significantly longer from the reference frame of the earth than it otherwise would due to the relativistic effect of time dilation caused by moving with a velocity near the speed of light
+
+\section{part b}
+
+In classical mechanics the distance that an object with a constant velocity travels in a given time is
+\begin{math}
+s=v\cdot t
+\end{math}
+which would result in
+\begin{math}
+s=0.999c\cdot2.2\times10^{^-6}\si{s}=299.5\si{m}
+\end{math}
+note that since this is assuming the AVERAGE lifetime of a muon and not taking into account the fact that it is probability based meaning that any muon could theoretically travel any distance without decaying albeit increasingly unlikely as the distance increases
+
+However, as mentioned in part a), time will be moving slower from the reference frame of the muon which means that it can travel a greater distance in the \begin{math}
+2.2\times10^{-6}\si{s}
+\end{math} than it would according to classical mechanics. 
+this difference in time can be calculated with the formula 
+\begin{equation} \label{}
+\Delta t=\Delta t_0\gamma
+\end{equation}
+where \begin{math}
+\Delta t_0
+\end{math} is the proper time for the muon, \begin{math}
+\Delta t
+\end{math} is the observer time and \begin{math}
+\gamma
+\end{math} is the Lorentz factor
+since both \begin{math}
+\gamma
+\end{math} and \begin{math}
+\Delta t_0
+\end{math}
+are known \begin{math}
+\Delta t
+\end{math} can be calculated
+
+\begin{equation} \label{}
+\Delta t=22\cdot2.2\times10{-6}\si{s}=48.4\times10{-6}\si{s}
+\end{equation}
+
+which means that the distance the muon actually travels from the reference frame of the earth is \begin{math}
+s=0.99c\cdot48.4\times10{-6}\si{s}=14.3\times10^{3}m
+\end{math} which is enough for the muons to reach the earth because \begin{math}
+14.3\times10^{3}\si{m} > 10\times10^{3}\si{m} 
+\end{math}
+note that this assumes that the muon's movement towards earth is perpendicular
+\section{part c}
+
+As explained in part b) the muons can reach earth due to the time dilation caused by the muons moving near light speed
+
+
+\end{document}
