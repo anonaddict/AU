@@ -51,7 +51,7 @@ print(solkmh.evalf(5),'km/h')
 
 
 
-# In[28]:
+# In[30]:
 
 
 from sympy import *
@@ -64,15 +64,22 @@ F_gnid= D*v**2
 
 ans2 = solve(Eq(m*a,F_gnid-F_t),a)
 
-print(ans2[0])
+print(ans2)
 #så A=0.0013 og C=9.82=g
-plot(ans2[0],(v,0,1500))
+plot(ans2,(v,0,1500))
 
 
-# In[142]:
+# In[35]:
 
 
+from sympy import *
+A,C,v=symbols('A,C,v')
 
+f=1/(A*v**2+C)
+
+result=integrate(f,v)
+
+print(result)
 
 
 # In[ ]:
