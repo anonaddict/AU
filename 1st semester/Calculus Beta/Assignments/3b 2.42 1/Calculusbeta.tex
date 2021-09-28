@@ -83,12 +83,29 @@ df=2^2dx+2\cdot 1\cdot 2 dy=4dx+4dy
 
 
 \subsection{b}
-\[
-f\left( x,y \right) = x^2\sin{\pi y^2}
-.\] 
+Given the function \[ x^{2} \sin{\left(\pi y^{2} \right)} .\]the partial derivative for a given variable is determined by differentiating the original function with the respective variable and keeping all other variables constant 
+$f_x$ is therefore
+\[ f_x = \frac{\partial}{\partial x} = 2 x \sin{\left(\pi y^{2} \right)} .\]
+Differentiating $f(x,y)$ for $y$ requires differentiating the function $ \sin{\left(\pi y^{2} \right)} .$
+Since this is a composite function the chain rule is used
+\[ (f(g(x)))'=f'(g(x))\cdot g'(x) .\]
+the following functions are chosen as f and g respectively
+\[ f = \sin{\left(y \right)} ,\; g = \pi y^{2} .\]
+this means f' and g' become
+\[ f' = \cos{\left(y \right)} ,\; g' = 2 \pi y .\]
+these can now all be inserted into the chain rule
+\[ 2 \pi y \cos{\left(\pi y^{2} \right)} .\]
+then multiply with the constant $ x^{2} $ to obtain the full expression for $f_y$
+\[ f_y = \frac{\partial}{\partial y} = 2 \pi x^{2} y \cos{\left(\pi y^{2} \right)} .\]
+Finally inputting the original equation in a CAS program and finding the partially derived for y returns
+\[ f_y = \frac{\partial}{\partial y} = 2 \pi x^{2} y \cos{\left(\pi y^{2} \right)} .\]
+which suggests the method used was correct
+the generel differential can now be found by insering $f_x$ and $f_y$
+\[ 2 dx x \sin{\left(\pi y^{2} \right)} + 2 \pi dy x^{2} y \cos{\left(\pi y^{2} \right)} .\]
+and inserting the point
+\[ 4 \pi dy .\]
+the differential in (1,2) is therefore
+\[ 4 \pi dy .\]
 
-\[
-
-.\] 
 
 \end{document}
