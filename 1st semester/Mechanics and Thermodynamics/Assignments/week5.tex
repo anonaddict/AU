@@ -1,0 +1,93 @@
+
+\documentclass[12pt,a4paper]{article}
+\title{Mechanics and Thermodynamics}
+\author{Anon}
+\date{\today}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{sources.bib}
+
+\usepackage{siunitx}
+\usepackage[cm]{fullpage}
+\usepackage{listings}
+
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{external}
+\tikzexternalize[prefix=tikz/]
+
+\newcommand{\R}{\mathbb{R}}
+
+\setlength{\parindent}{0pt}
+
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=cyan,
+}				
+\urlstyle{same}
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+\begin{document}
+\maketitle
+\section{Objects on a ring}
+
+\subsection{1}
+
+\subsubsection{i}
+
+In the initial stage the heavier object has a kinetic energy of 0 since it is at rest.
+
+The potential energy in the initial position consists of two parts
+
+\begin{itemize}
+	\item potential energy due to gravity
+	\item potential energy due to the pull of the spring
+
+\end{itemize}
+
+
+Potential energy due to gravity is calculated by \[
+	E_{grav}=mgh
+.\] 
+where $m$ is the mass of the object,  $g$ is the gravitational pull (assumed to be $9.8\unit{m.s^{-2}}$) and $h$ is the
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
