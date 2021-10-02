@@ -13,7 +13,7 @@ x,y,z,t= symbols("x y z t")
 #insert f(x,y,...)
 
 #funtion of any number of variables f(x,y,z)
-origin = 1/(x**4*y**2)
+origin = 4*x**2*y+5*x*y**2+x**3
 #variable values for defined point
 xval = -2
 yval = -1
