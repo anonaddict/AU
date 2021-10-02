@@ -9,7 +9,7 @@ SetTitleMatchMode, 2 ; searches for any instance of the specified string since m
 reload
 return
 
-:r0*?O:prt::
+:r0*?O:print::
 (
 print{(}{"}{"}{)}{Left 2}
 )
