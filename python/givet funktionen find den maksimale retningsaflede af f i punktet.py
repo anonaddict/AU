@@ -25,7 +25,7 @@ from sympy import *
 x,y,z,t= symbols("x y z t")
 
 #funtion 
-origin = 4*x*y
+origin = -2*exp(x*y)
 #variable values for defined point
 xval = 2
 yval = -1

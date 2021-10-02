@@ -142,9 +142,19 @@ snippet =< "implied by" Ai
 endsnippet
 
 context "math()"
-snippet iff "iff" Ai
-\iff
+snippet grad "gradient" Ai
+\nabla f($1) = ($2, $3) $0
 endsnippet
+
+snippet SS "subsection" Ai
+\subsection{$1} $0
+endsnippet
+
+snippet SEC "section" Ai
+\section{$1} $0
+endsnippet
+
+
 
 snippet mk "Math" wA
 $${1}$`!p

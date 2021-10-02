@@ -17,7 +17,7 @@ from sympy import *
 x,y,z,t= symbols("x y z t")
 
 #funtion of any number of variables f(x,y,z)
-origin = -2*x**2-x-2*y**2+4*y
+origin = x**2+2*y**2+5*y
 
 print('Given the function',latex((origin),mode='equation'),"the gradient is determined")
 
