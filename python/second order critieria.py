@@ -7,6 +7,8 @@ a,b,c,d,x,y,z,t= symbols("a b c d x y z t")
 #insert f(x,y) and critical point here
 origin = -x**2+12*x+2*y**2+24*y+32
 crit = 6,-6
+#input fields end here
+
 
 a = diff(origin,x,x)
 b = diff(origin,x,y)
