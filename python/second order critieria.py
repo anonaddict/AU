@@ -4,6 +4,7 @@ from sympy import *
 
 a,b,c,d,x,y,z,t= symbols("a b c d x y z t")
 
+#insert f(x,y) and critical point here
 origin = -x**2+12*x+2*y**2+24*y+32
 crit = 6,-6
 
@@ -23,7 +24,7 @@ print(ain,bins,cin,din)
 
 
 det = ain*din-bins*cin
-print("the determinant of the hesse integral is")
+print("the determinant of the hesse  matrix is")
 print(det)
 
 print("the critical point is therefore")
