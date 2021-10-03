@@ -8,6 +8,7 @@ a,b,c,d,x,y,z,t= symbols("a b c d x y z t")
 origin = -x**2+12*x+2*y**2+24*y+32
 crit = 6,-6
 #input fields end here
+#code is based on 3.2.2 "Anden ordens kriteriet" in "Calculus Beta 2021" by Niels Lauritzen, Klaus Thomsen, Steen Thorbjørn
 
 
 a = diff(origin,x,x)
