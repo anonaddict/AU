@@ -48,7 +48,7 @@ urlcolor=cyan,
 \usepackage{transparent}
 \newcommand{\incfig}[1]{%
 	\def\svgwidth{\columnwidth}
-	\import{./figures/}{#1.pdf_tex}
+	\import{./figures/}{#1.PDF_Tex}
 }
 
 \pdfsuppresswarningpagegroup=1
@@ -56,7 +56,7 @@ urlcolor=cyan,
 \begin{document}
 \maketitle
 	
-\section{u12}
+\section{up}
 
 given the function \[
 	f\left( x,y \right) = 4x^2y+5xy^2+x^3
@@ -70,7 +70,7 @@ f_{y}=4x^2+10xy
 .\] 
 
 \subsection{b}
-the gradient is found by finding the partially derived with respect to x and y respectively. since $f_{y}$ is already found in a) the only one left to find is \[
+the gradient is found by finding the partially derived with respect to x and y respectively. Since $f_{y}$ is already found in a) the only one left to find is \[
 f_{x}=8xy+5y^2+3x^2
 .\] 
 the gradient is therefore \[
@@ -80,19 +80,56 @@ the gradient is therefore \[
 
 
 \subsection{c}
-calculating the unit vector from the given vector by using pythagoras
+calculating the unit vector from the given vector by using Pythagoras to find the length of the vector
 
+\[
+	 \mid \vec{v} \mid   =\sqrt{8^2+(-6)^2} = 10
+.\] 
 
-
-
+then dividing the vector $\vec{v}$ by its length to get the unit vector in the direction \[
+\overline{u}=\begin{pmatrix} 0.8\\ -0.6 \end{pmatrix}
+.\] 
 
 
 \subsection{d}
+
+according to sentence 3.10:
+
+\[
+	D_{\overline{u}}f(x,y)=\frac{\partial f}{\partial x} (x,y)a+\frac{\partial f}{\partial y} (x,y)b
+.\]
+where a and b are the x and y values of the unit vector
+
+since the partial derivatives are already known from the gradient the values can all be inserted which results in
+
+\[
+	D_{\overline{u}}f(x,y)=-1.6
+.\] 
 
 
 
 \subsection{e}
 
+the greatest directional derivative in a point is the same as the length of the gradient in the point which means using Pythagoras 
+
+\[
+ \mid \overline{\nabla } \mid = \sqrt{2.5^2+3.6^2} 
+.\] 
+
+by dividing the gradient by the length the unit vector $\overline{v}$ is found \[
+\begin{pmatrix} \frac{2.5}{ \sqrt{2.5^2+3.6^2}}\\ \frac{3.6}{ \sqrt{2.5^2+3.6^2}} \end{pmatrix}
+.\] 
+
+\[
+\overline{v}= \begin{pmatrix} 0.57\\ 0.82 \end{pmatrix}
+.\] 
+
+\subsection{f} 
+
+the value of the greatest directional derivative is equivalent to the length of the gradient
+\[
+ \mid \overline{\nabla } \mid = \sqrt{2.5^2+3.6^2}=19.21 
+.\] 
 
 
 

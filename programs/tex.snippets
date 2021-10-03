@@ -516,6 +516,11 @@ snippet "([a-zA-Z])hat" "hat" riA
 \hat{`!p snip.rv=match.group(1)`}
 endsnippet
 
+priority 100
+context "math()"
+snippet "([a-zA-Z])vec" "vector" riA
+\vec{`!p snip.rv=match.group(1)`}
+endsnippet
 
 
 
