@@ -7,10 +7,7 @@ x,y,z,t= symbols("x y z t")
 #insert f(x,y,...)
 
 #funtion of any number of variables f(x,y,z)
-origin = 
-
-
-print('Given the function',latex((origin),mode='equation'),"the gradient is determined")
+origin = x**2-8*x+3*y**2+12*y+33
 
 Dx = diff(origin,x)
 Dy = diff(origin,y)
