@@ -141,12 +141,13 @@ snippet =< "implied by" Ai
 \impliedby
 endsnippet
 
-snippet SSEC "subsection" Ai
-\subsection{$1} $0
+
+snippet sec "section" w
+\section{$1} $0
 endsnippet
 
-snippet SEC "section" Ai
-\section{$1} $0
+snippet SS "subsection" Ai
+\subsection{$1} $0
 endsnippet
 
 
@@ -462,6 +463,11 @@ snippet || "mid" iA
 endsnippet
 
 context "math()"
+snippet == "equals" iA
+&=
+endsnippet
+
+context "math()"
 snippet inn "in " iA
 \in 
 endsnippet
@@ -537,11 +543,6 @@ endsnippet
 context "math()"
 snippet cc "subset" Ai
 \subset
-endsnippet
-
-context "math()"
-snippet inn "in " iA
-\in 
 endsnippet
 
 
