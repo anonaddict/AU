@@ -13,10 +13,10 @@ x,y,z,t= symbols("x y z t")
 #insert f(x,y,...)
 
 #funtion of any number of variables f(x,y,z)
-origin = 4*x**2*y+5*x*y**2+x**3
+origin = 2*x**3+y**2-24*x-6*y+5
 #variable values for defined point
-xval = -2
-yval = -1
+xval = 2
+yval = 5/2
 
 print('Given the function',latex((origin),mode='equation'),"the gradient is determined")
 
