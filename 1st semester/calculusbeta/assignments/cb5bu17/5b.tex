@@ -5,12 +5,8 @@
 \date{\today}
 
 
-\usepackage{graphicx}
-\usepackage{pgfplots}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage[T1]{fontenc}
-\usepackage{textcomp}
 
 \usepackage[
 backend=biber,
@@ -40,18 +36,7 @@ urlcolor=cyan,
 }				
 \urlstyle{same}
 
-% figure support
-\usepackage{import}
-\usepackage{xifthen}
-\pdfminorversion=7
-\usepackage{pdfpages}
-\usepackage{transparent}
-\newcommand{\incfig}[1]{%
-	\def\svgwidth{\columnwidth}
-	\import{./figures/}{#1.pdf_tex}
-}
 
-\pdfsuppresswarningpagegroup=1
 
 \begin{document}
 \maketitle
