@@ -9,11 +9,16 @@ SetTitleMatchMode, 2 ; searches for any instance of the specified string since m
 reload
 return
 
-#IfWinActive Jupyter Notebook
+#IfWinActive Note
+
+:r0*?O:prinq::
+(
+print{(}{"}{"}{)}{Left 2}
+)
 
 :r0*?O:print::
 (
-print{(}{"}{"}{)}{Left 2}
+print{(}{)}{Left}
 )
 
 :r0*?:pytex::

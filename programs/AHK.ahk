@@ -7,11 +7,17 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 reload
 return
 
-:OR*?:ae::æ
+:OR*?:aee::æ
 
-:OR*?:oe::ø
+:OR*?:oee::ø
 
-:OR*?:aa::å
+:OR*?:aaa::å
+
+:*?:e'::Poké
+
+:OR*?:iql::https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_IQ_group#Group_C
+
+:OR*?:iqi::https://bulbapedia.bulbagarden.net/wiki/IQ#IQ_Groups
 
 #n::
 Run Notepad++
