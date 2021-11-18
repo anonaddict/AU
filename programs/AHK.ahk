@@ -33,4 +33,6 @@ return
 
 :*?:usflag::🇺🇸
 
-:R*?:signx::🎩 `n🐍 `nNo step on snek 🇺🇸
+:R*?:snekx::🎩 `n🐍 `nNo step on snek 🇺🇸
+
+:R*?:cwx::🤡🌏

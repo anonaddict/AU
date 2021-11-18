@@ -7,12 +7,15 @@ x,y,z,t= symbols("x y z t")
 #insert f(x,y,...)
 
 #funtion of any number of variables f(x,y,z)
-origin = x**2-8*x+3*y**2+12*y+33
-
-Dx = diff(origin,x)
-Dy = diff(origin,y)
+origin = 2*x**3+y**2-24*x-6*y+5
+originsubs=origin.subs(y,2/5)
+Dx = diff(originsubs,x)
+Dy = diff(originsubs,y)
 
 grad = (Dx, Dy)
 
+
 print(grad)
-display(grad)
+
+
+
