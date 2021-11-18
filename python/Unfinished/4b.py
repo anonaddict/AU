@@ -7,7 +7,7 @@ from sympy import *
 x,y,z,t,a,b,c,d= symbols("x y z t a b c d")
 
 #insert the function
-f= 4*x*2*y+5*x*y**2+x**3
+f= 4*x**2*y+5*x*y**2+x**3
 #point
 pt = 2,1
 #dir
@@ -34,13 +34,19 @@ dufxy = gradx*direct[0]*directlen+grady*direct[1]*directlen
 
 
 
-#print(dufxy)
+print(dufxy)
+vvec=fx**2+fy**2
+print(latex(vvec))
+
+test=vvec.subs([(x,2),(y,1)])
+print(test.evalf(7))
+print(vvec)
 
 
+qw=33/sqrt(test)
+qwe=36/sqrt(test)
 
-
-# In[ ]:
-
-
+print(qw)
+print(qwe)
 
 

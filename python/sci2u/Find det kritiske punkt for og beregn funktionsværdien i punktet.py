@@ -17,7 +17,8 @@ from sympy import *
 x,y,z,t= symbols("x y z t")
 
 #funtion of any number of variables f(x,y,z)
-origin = x**2+2*y**2+5*y
+origin = x**2-4*x+y**2-6*y+13
+
 
 print('Given the function',latex((origin),mode='equation'),"the gradient is determined")
 
@@ -40,6 +41,7 @@ print("the function value in the critical point is")
 funcval = origin.subs([(x,solveq[x]),(y,solveq[y])])
 
 print(funcval)
+
 
 #print(grad)
 #display(grad)
